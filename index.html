@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football</title>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" fetchpriority="high" as="image" href="images/bg-m.webp" type="image/webp" media="(max-width: 425px)">
+    <link rel="preload" fetchpriority="high" as="image" href="images/bg-p.webp" type="image/webp" media="(min-width: 426px) and (max-width: 784px)">
+    <link rel="preload" fetchpriority="high" as="image" href="images/background.webp" type="image/webp" media="(min-width: 785px)">
 </head>
 <body>
     <div class="wrapper">
@@ -84,36 +84,41 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/cup_2.webp" alt="2010 MLS LEAGUE CUP" class="cup_img" width="83" height="200">
+                            <img src="images/cup_2.webp" alt="2010 MLS LEAGUE CUP" class="cup_img" width="83" height="200" loading="lazy">
                             <div class="cup_line"></div>
                             <div class="cup_title">2010 MLS LEAGUE CUP</div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/cup_3.webp" alt="cup_3" class="cup_img" width="151" height="200">
+                            <img src="images/cup_3.webp" alt="cup_3" class="cup_img" width="151" height="200" loading="lazy">
                             <div class="cup_line"></div>
                             <div class="cup_title">2012 UEFA CHAMPIONS LEAGUE</div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/cup_4.webp" alt="2014 PREMIER LEAGUE CUP" class="cup_img" width="126" height="200">
+                            <img src="images/cup_4.webp" alt="2014 PREMIER LEAGUE CUP" class="cup_img" width="126" height="200" loading="lazy">
                             <div class="cup_line"></div>
                             <div class="cup_title">2014 PREMIER LEAGUE CUP</div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/cup_5.webp" alt="2014 WORLD CUP CHAMPION" class="cup_img" width="104" height="200">
+                            <img src="images/cup_5.webp" alt="2014 WORLD CUP CHAMPION" class="cup_img" width="104" height="200" loading="lazy">
                             <div class="cup_line"></div>
                             <div class="cup_title">2014 WORLD CUP CHAMPION</div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/cup_1.webp" alt="2013 BUNDESLIGA CHAMPION CUP" class="cup_img" width="131" height="200">
+                            <img src="images/cup_1.webp" alt="2013 BUNDESLIGA CHAMPION CUP" class="cup_img" width="131" height="200" loading="lazy">
                             <div class="cup_line"></div>
                             <div class="cup_title">2013 BUNDESLIGA CHAMPION CUP</div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <script src="swiper-bundle.min.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
