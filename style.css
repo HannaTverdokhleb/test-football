@@ -343,7 +343,7 @@ img {
 }
 @media (max-width: 784px) {
     .section_hero {
-        background: url('images/bg-p.png');
+        background: url('images/bg-p.webp');
     }
     .section_hero::before,
     .section_hero::after {
@@ -405,9 +405,6 @@ img {
     }
 }
 @media (max-width: 670px) {
-    .section_hero {
-        background: url('images/bg-m.png');
-    }
     .container {
         padding: 0 15px;
     }
@@ -465,5 +462,13 @@ img {
     }
     .menu_item_link {
         padding: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .section_hero {
+        background: url('images/bg-m.webp');
+    }
+    .section_hero {
+        padding: 140px 0 55px 0;
     }
 }
